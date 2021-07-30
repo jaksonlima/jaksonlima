@@ -1,4 +1,4 @@
-## Jakson Lima
+## ⭐ Jakson Lima
 - 🎓 Formação acadêmica: Ciência da Computação
 - 👀 Estou interessado: Kubernetes, Docker, Java / Spring / Quarkus, ReactJs / NextJs, Inglês.
 - 📱  Como me encontrar: (45) 99987-0206
