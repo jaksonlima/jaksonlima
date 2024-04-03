@@ -3,7 +3,7 @@
 - 👀 Estou interessado: Kubernetes, Docker, AWS, DigitalOcean, Java, Spring, Quarkus, ReactJs, NextJs, Inglês.
 - 📱  Como me encontrar: <a href="https://api.whatsapp.com/send?phone=5545999870206&text=Ol%C3%A1">(45) 99987-0206</a>
 - 📫 Portfólio: https://jaksonlima.github.io
-- 📫 Sites: https://olimpiatec.com.br, https://www.jwsystem.com.br
+- 📫 Linkedin: https://www.linkedin.com/in/jakson-lima-68264b160/
 
 <!---
 jaksonlimaamcom/jaksonlimaamcom is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
