@@ -8,27 +8,30 @@
 
 ---
 
-### `whoami`
+### Contribution Skyline
 
-**Solutions Architect & AI Engineer** com mais de **10 anos de experiência** e formação em Ciência da Computação. Especialista no desenvolvimento de **sistemas distribuídos de alta performance**, atuando em modelo **Full Cycle** — do backend ao frontend — e liderando a transição de ambientes On-premise para Cloud Providers.
+<div align="center">
 
-Projeto plataformas guiadas por **Domain-Driven Design**, **Clean Architecture** e **Arquitetura Hexagonal**, rodando cloud-native em **GCP / GKE** com IaC via **Terraform**. Integro **IA** de forma pragmática ao fluxo de engenharia de software.
+<img src="./assets/skyline.svg" alt="3d-contrib-skyline" />
 
-- Liderança técnica de times e migração de monolitos para microsserviços
-- Design de APIs RESTful e event-driven · mensageria em larga escala (Kafka, RabbitMQ)
-- Software architecture design com **C4** · observabilidade ponta a ponta
+</div>
+
+> Modelo isométrico gerado pela [profile-3d-contrib](https://github.com/yoshi389111/github-profile-3d-contrib). A esteira gera as 10 variações e uma rotação por horário do dia troca o tema — tons escuros de madrugada/manhã, tons claros à noite. Renderização estática, sem depender de serviços externos.
 
 ---
 
-### Trajetória
+### GitHub Stats
 
-| Período | Empresa | Cargo |
-|---|---|---|
-| 2026 — atual | **Bullla** | Architect · Solutions & Software |
-| 2024 — 2025 | **Nubank** | Senior Software Engineer |
-| 2022 — 2024 | **Dasa** | Staff Software Engineer · Tech Lead |
-| 2021 — 2023 | **Compass.uol** | Especialista / Desenvolvedor Sênior |
-| 2021 | **Philips · AMcom** | Desenvolvedor Sênior |
+<div align="center">
+
+<img height="170em" src="./assets/stats.svg" alt="github-stats" />
+<img height="170em" src="./assets/streak.svg" alt="github-streak" />
+
+<br/>
+
+<img height="170em" src="./assets/top-langs.svg" alt="top-langs" />
+
+</div>
 
 ---
 
@@ -71,30 +74,27 @@ Projeto plataformas guiadas por **Domain-Driven Design**, **Clean Architecture**
 
 ---
 
-### GitHub Stats
+### `whoami`
 
-<div align="center">
+**Solutions Architect & AI Engineer** com mais de **10 anos de experiência** e formação em Ciência da Computação. Especialista no desenvolvimento de **sistemas distribuídos de alta performance**, atuando em modelo **Full Cycle** — do backend ao frontend — e liderando a transição de ambientes On-premise para Cloud Providers.
 
-<img height="170em" src="./assets/stats.svg" alt="github-stats" />
-<img height="170em" src="./assets/streak.svg" alt="github-streak" />
+Projeto plataformas guiadas por **Domain-Driven Design**, **Clean Architecture** e **Arquitetura Hexagonal**, rodando cloud-native em **GCP / GKE** com IaC via **Terraform**. Integro **IA** de forma pragmática ao fluxo de engenharia de software.
 
-<br/>
-
-<img height="170em" src="./assets/top-langs.svg" alt="top-langs" />
-
-</div>
+- Liderança técnica de times e migração de monolitos para microsserviços
+- Design de APIs RESTful e event-driven · mensageria em larga escala (Kafka, RabbitMQ)
+- Software architecture design com **C4** · observabilidade ponta a ponta
 
 ---
 
-### Contribution Skyline
+### Trajetória
 
-<div align="center">
-
-<img src="./profile-3d-contrib/profile-night-view.svg" alt="3d-contrib-skyline" />
-
-</div>
-
-> Modelo isométrico gerado pela [profile-3d-contrib](https://github.com/yoshi389111/github-profile-3d-contrib) via GitHub Action (`.github/workflows/profile-3d.yml`), atualizado diariamente. O SVG é commitado no próprio repositório — renderização determinística, sem depender de serviços externos.
+| Período | Empresa | Cargo |
+|---|---|---|
+| 2026 — atual | **Bullla** | Architect · Solutions & Software |
+| 2024 — 2025 | **Nubank** | Senior Software Engineer |
+| 2022 — 2024 | **Dasa** | Staff Software Engineer · Tech Lead |
+| 2021 — 2023 | **Compass.uol** | Especialista / Desenvolvedor Sênior |
+| 2021 | **Philips · AMcom** | Desenvolvedor Sênior |
 
 ---
 
