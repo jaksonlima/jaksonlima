@@ -1,8 +1,8 @@
-name: GitHub Profile 3D Contrib
+name: GitHub Profile Assets
 
 on:
   schedule:
-    - cron: "0 3 * * *"
+    - cron: "0 6 * * *"   # 03:00 BRT (06:00 UTC) — todo dia
   workflow_dispatch:
   push:
     branches:
@@ -23,10 +23,32 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
-      - name: Commit & push generated SVGs
+      - name: Snapshot stats cards as static SVG
+        run: |
+          mkdir -p assets
+
+          download() {
+            local url="$1" out="$2" tmp
+            tmp="$(mktemp)"
+            if curl -sSL --max-time 30 --retry 3 --retry-delay 5 "$url" -o "$tmp" \
+               && head -c 200 "$tmp" | grep -q "<svg" \
+               && ! grep -qi "something went wrong\|Maximum retries exceeded" "$tmp"; then
+              mv "$tmp" "$out"
+              echo "OK   -> $out"
+            else
+              echo "SKIP -> $out (resposta inválida, mantendo versão anterior)"
+              rm -f "$tmp"
+            fi
+          }
+
+          download "https://github-readme-stats.vercel.app/api?username=jaksonlima&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1A1B26&include_all_commits=true&count_private=true" assets/stats.svg
+          download "https://github-readme-stats.vercel.app/api/top-langs/?username=jaksonlima&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=1A1B26" assets/top-langs.svg
+          download "https://github-readme-streak-stats.herokuapp.com/?user=jaksonlima&theme=tokyonight&hide_border=true&background=1A1B26" assets/streak.svg
+
+      - name: Commit & push generated assets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A profile-3d-contrib
-          git diff --staged --quiet || git commit -m "chore: update 3d contribution skyline"
+          git add -A profile-3d-contrib assets
+          git diff --staged --quiet || git commit -m "chore: update profile stats and skyline"
           git push

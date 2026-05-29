@@ -75,12 +75,12 @@ Projeto plataformas guiadas por **Domain-Driven Design**, **Clean Architecture**
 
 <div align="center">
 
-<img height="170em" src="https://github-readme-stats.vercel.app/api?username=jaksonlima&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1A1B26&include_all_commits=true&count_private=true" alt="github-stats" />
-<img height="170em" src="https://github-readme-streak-stats.herokuapp.com/?user=jaksonlima&theme=tokyonight&hide_border=true&background=1A1B26" alt="github-streak" />
+<img height="170em" src="./assets/stats.svg" alt="github-stats" />
+<img height="170em" src="./assets/streak.svg" alt="github-streak" />
 
 <br/>
 
-<img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jaksonlima&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=1A1B26" alt="top-langs" />
+<img height="170em" src="./assets/top-langs.svg" alt="top-langs" />
 
 </div>
 
