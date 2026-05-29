@@ -1,42 +1,107 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" fill="none" role="img" aria-label="Jakson Lima — Solutions Architect e AI Engineer">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" fill="none" role="img" aria-label="Jakson Lima — Solutions Architect e AI Engineer">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1a1b27"/>
-      <stop offset="55%" stop-color="#1f2335"/>
-      <stop offset="100%" stop-color="#24283b"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#16161e"/>
+      <stop offset="50%" stop-color="#1a1b26"/>
+      <stop offset="100%" stop-color="#1f2335"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#7aa2f7"/>
-      <stop offset="45%" stop-color="#bb9af7"/>
-      <stop offset="100%" stop-color="#7dcfff"/>
-    </linearGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" fill="none" stroke="#2a2e44" stroke-width="1"/>
-    </pattern>
-    <radialGradient id="glow" cx="78%" cy="30%" r="55%">
-      <stop offset="0%" stop-color="#7aa2f7" stop-opacity="0.18"/>
+    <radialGradient id="meshA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1080 70) rotate(120) scale(360)">
+      <stop offset="0%" stop-color="#7aa2f7" stop-opacity="0.22"/>
       <stop offset="100%" stop-color="#7aa2f7" stop-opacity="0"/>
     </radialGradient>
+    <radialGradient id="meshB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(120 360) rotate(-60) scale(420)">
+      <stop offset="0%" stop-color="#bb9af7" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#bb9af7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1280" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7dcfff"/>
+      <stop offset="40%" stop-color="#7aa2f7"/>
+      <stop offset="70%" stop-color="#bb9af7"/>
+      <stop offset="100%" stop-color="#7dcfff"/>
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.2" fill="#2a2e44"/>
+    </pattern>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <style>
+      .shimmer { animation: shimmer 6s linear infinite; }
+      @keyframes shimmer { from { transform: translateX(-120px) } to { transform: translateX(120px) } }
+      .pulse { animation: pulse 3.2s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+      @keyframes pulse { 0%,100% { opacity:.5 } 50% { opacity:1 } }
+      .flow { stroke-dasharray: 5 9; animation: flow 4s linear infinite; }
+      @keyframes flow { to { stroke-dashoffset: -56 } }
+      .name { font-family: Georgia, 'Times New Roman', 'Iowan Old Style', serif; }
+      .mono { font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', ui-monospace, monospace; }
+    </style>
   </defs>
 
-  <rect width="1280" height="320" rx="16" fill="url(#bg)"/>
-  <rect width="1280" height="320" rx="16" fill="url(#grid)"/>
-  <rect width="1280" height="320" rx="16" fill="url(#glow)"/>
-  <rect x="0" y="0" width="1280" height="6" rx="3" fill="url(#accent)"/>
+  <rect width="1280" height="360" rx="18" fill="url(#bg)"/>
+  <rect width="1280" height="360" rx="18" fill="url(#dots)"/>
+  <rect width="1280" height="360" rx="18" fill="url(#meshA)"/>
+  <rect width="1280" height="360" rx="18" fill="url(#meshB)"/>
+  <rect x="1" y="1" width="1278" height="358" rx="17" fill="none" stroke="#2f3450" stroke-width="1"/>
 
-  <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
-    <text x="72" y="118" font-size="30" fill="#7aa2f7" font-weight="600" letter-spacing="6">SOLUTIONS ARCHITECT · AI ENGINEER</text>
-    <text x="70" y="196" font-size="76" fill="#c0caf5" font-weight="700">Jakson Lima</text>
-    <text x="72" y="244" font-size="26" fill="#9aa5ce" font-weight="400">Distributed Systems · High Performance · Cloud Native</text>
-
-    <g font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="20" fill="#565f89">
-      <text x="72" y="288">GCP · GKE · Terraform · Java · Spring · Clean Architecture · DDD</text>
+  <!-- accent bar with moving shimmer -->
+  <g>
+    <rect x="0" y="0" width="1280" height="5" rx="2.5" fill="url(#accent)"/>
+    <g clip-path="inset(0)">
+      <rect class="shimmer" x="-120" y="0" width="120" height="5" fill="#ffffff" opacity="0.35"/>
     </g>
   </g>
 
-  <g transform="translate(1040,150)" opacity="0.9">
-    <circle cx="0" cy="0" r="6" fill="#9ece6a"/>
-    <circle cx="34" cy="0" r="6" fill="#e0af68"/>
-    <circle cx="68" cy="0" r="6" fill="#f7768e"/>
+  <!-- distributed-systems node graph (the memorable element) -->
+  <g transform="translate(1010 188)" filter="url(#soft)">
+    <g stroke="#7aa2f7" stroke-width="1.4" opacity="0.55" fill="none">
+      <line class="flow" x1="0" y1="0" x2="120" y2="-72"/>
+      <line class="flow" x1="0" y1="0" x2="150" y2="40"/>
+      <line class="flow" x1="0" y1="0" x2="36" y2="96"/>
+      <line class="flow" x1="120" y1="-72" x2="150" y2="40"/>
+      <line class="flow" x1="120" y1="-72" x2="48" y2="-118"/>
+      <line class="flow" x1="150" y1="40" x2="36" y2="96"/>
+    </g>
+    <g>
+      <circle class="pulse" cx="0" cy="0" r="9" fill="#7dcfff"/>
+      <circle class="pulse" cx="120" cy="-72" r="6" fill="#bb9af7"/>
+      <circle class="pulse" cx="150" cy="40" r="6" fill="#9ece6a"/>
+      <circle class="pulse" cx="36" cy="96" r="5" fill="#e0af68"/>
+      <circle class="pulse" cx="48" cy="-118" r="5" fill="#f7768e"/>
+    </g>
+  </g>
+
+  <!-- text block -->
+  <g filter="url(#shadow)">
+    <text class="mono" x="80" y="112" font-size="17" letter-spacing="7" fill="#7aa2f7" font-weight="600">SOLUTIONS ARCHITECT &#183; AI ENGINEER</text>
+    <text class="name" x="78" y="196" font-size="78" fill="#c0caf5" font-weight="700">Jakson Lima</text>
+    <text x="80" y="240" font-size="23" fill="#9aa5ce" font-family="Georgia, serif" font-style="italic">Distributed Systems &#183; High Performance &#183; Cloud Native</text>
+  </g>
+
+  <!-- tech chips -->
+  <g class="mono" font-size="15" fill="#a9b1d6">
+    <g transform="translate(80 280)">
+      <rect x="0" y="0" width="64" height="30" rx="8" fill="#24283b" stroke="#3b4261"/>
+      <text x="32" y="20" text-anchor="middle">GCP</text>
+    </g>
+    <g transform="translate(154 280)">
+      <rect x="0" y="0" width="64" height="30" rx="8" fill="#24283b" stroke="#3b4261"/>
+      <text x="32" y="20" text-anchor="middle">GKE</text>
+    </g>
+    <g transform="translate(228 280)">
+      <rect x="0" y="0" width="104" height="30" rx="8" fill="#24283b" stroke="#3b4261"/>
+      <text x="52" y="20" text-anchor="middle">Terraform</text>
+    </g>
+    <g transform="translate(342 280)">
+      <rect x="0" y="0" width="118" height="30" rx="8" fill="#24283b" stroke="#3b4261"/>
+      <text x="59" y="20" text-anchor="middle">Java · Spring</text>
+    </g>
+    <g transform="translate(470 280)">
+      <rect x="0" y="0" width="60" height="30" rx="8" fill="#24283b" stroke="#3b4261"/>
+      <text x="30" y="20" text-anchor="middle">DDD</text>
+    </g>
   </g>
 </svg>

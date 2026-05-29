@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/banner.svg" alt="Jakson Lima — Solutions Architect & AI Engineer" width="100%" />
+<img src="./assets/banner.svg" alt="Jakson Lima — Solutions Architect e AI Engineer" width="100%" />
 
 <br/>
 
@@ -14,11 +14,9 @@
 
 <div align="center">
 
-<img src="./assets/skyline.svg" alt="3d-contrib-skyline" />
+<img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3d-contrib-skyline" />
 
 </div>
-
-> Modelo isométrico gerado pela [profile-3d-contrib](https://github.com/yoshi389111/github-profile-3d-contrib). A esteira gera as 10 variações e uma rotação por horário do dia troca o tema — tons escuros de madrugada/manhã, tons claros à noite. Renderização estática, sem depender de serviços externos.
 
 ---
 
@@ -76,30 +74,6 @@
 
 ---
 
-### `whoami`
-
-**Solutions Architect & AI Engineer** com mais de **10 anos de experiência** e formação em Ciência da Computação. Especialista no desenvolvimento de **sistemas distribuídos de alta performance**, atuando em modelo **Full Cycle** — do backend ao frontend — e liderando a transição de ambientes On-premise para Cloud Providers.
-
-Projeto plataformas guiadas por **Domain-Driven Design**, **Clean Architecture** e **Arquitetura Hexagonal**, rodando cloud-native em **GCP / GKE** com IaC via **Terraform**. Integro **IA** de forma pragmática ao fluxo de engenharia de software.
-
-- Liderança técnica de times e migração de monolitos para microsserviços
-- Design de APIs RESTful e event-driven · mensageria em larga escala (Kafka, RabbitMQ)
-- Software architecture design com **C4** · observabilidade ponta a ponta
-
----
-
-### Trajetória
-
-| Período | Empresa | Cargo |
-|---|---|---|
-| 2026 — atual | **Bullla** | Architect · Solutions & Software |
-| 2024 — 2025 | **Nubank** | Senior Software Engineer |
-| 2022 — 2024 | **Dasa** | Staff Software Engineer · Tech Lead |
-| 2021 — 2023 | **Compass.uol** | Especialista / Desenvolvedor Sênior |
-| 2021 | **Philips · AMcom** | Desenvolvedor Sênior |
-
----
-
 ### Formação
 
 - **MBA · Engenharia de Software com IA** — Full Cycle *(2025 — 2026, em andamento)*
@@ -114,13 +88,15 @@ Projeto plataformas guiadas por **Domain-Driven Design**, **Clean Architecture**
 <div align="center">
 
 <a href="https://www.linkedin.com/in/jakson-lima-68264b160/" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-1A1B26?style=for-the-badge&logo=linkedin&logoColor=7AA2F7" alt="linkedin" />
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="linkedin" />
 </a>
+&nbsp;
 <a href="https://jaksonlima.com.br" target="_blank">
-  <img src="https://img.shields.io/badge/Website-1A1B26?style=for-the-badge&logo=googlechrome&logoColor=9ECE6A" alt="website" />
+  <img src="https://img.shields.io/badge/Website-4285F4?style=flat-square&logo=googlechrome&logoColor=white" alt="website" />
 </a>
+&nbsp;
 <a href="mailto:jaksonsneider@gmail.com">
-  <img src="https://img.shields.io/badge/Email-1A1B26?style=for-the-badge&logo=gmail&logoColor=F7768E" alt="email" />
+  <img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="email" />
 </a>
 
 </div>
