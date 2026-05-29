@@ -90,7 +90,7 @@ Projeto plataformas guiadas por **Domain-Driven Design**, **Clean Architecture**
 
 <div align="center">
 
-<img src="./profile-3d-contrib/profile-night.svg" alt="3d-contrib-skyline" />
+<img src="./profile-3d-contrib/profile-night-view.svg" alt="3d-contrib-skyline" />
 
 </div>
 
