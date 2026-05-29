@@ -1,8 +1,10 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3500&pause=1000&color=7AA2F7&center=true&vCenter=true&width=760&lines=Solutions+Architect+%7C+AI+Engineer;Distributed+Systems+%26+Scalable+Architecture;Clean+Architecture+%7C+Hexagonal+%7C+DDD;Cloud+Native+on+GCP+%2B+GKE+%2B+Terraform" alt="typing-header" />
+<img src="./assets/banner.svg" alt="Jakson Lima — Solutions Architect & AI Engineer" width="100%" />
 
-📍 Florianópolis, Santa Catarina, Brasil
+<br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3500&pause=1000&color=7AA2F7&center=true&vCenter=true&width=760&lines=Distributed+Systems+%26+Scalable+Architecture;Clean+Architecture+%7C+Hexagonal+%7C+DDD;Cloud+Native+on+GCP+%2B+GKE+%2B+Terraform" alt="typing-header" />
 
 </div>
 

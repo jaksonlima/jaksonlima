@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" fill="none" role="img" aria-label="Jakson Lima — Solutions Architect e AI Engineer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1b27"/>
+      <stop offset="55%" stop-color="#1f2335"/>
+      <stop offset="100%" stop-color="#24283b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7aa2f7"/>
+      <stop offset="45%" stop-color="#bb9af7"/>
+      <stop offset="100%" stop-color="#7dcfff"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#2a2e44" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="78%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#7aa2f7" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#7aa2f7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="320" rx="16" fill="url(#bg)"/>
+  <rect width="1280" height="320" rx="16" fill="url(#grid)"/>
+  <rect width="1280" height="320" rx="16" fill="url(#glow)"/>
+  <rect x="0" y="0" width="1280" height="6" rx="3" fill="url(#accent)"/>
+
+  <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+    <text x="72" y="118" font-size="30" fill="#7aa2f7" font-weight="600" letter-spacing="6">SOLUTIONS ARCHITECT · AI ENGINEER</text>
+    <text x="70" y="196" font-size="76" fill="#c0caf5" font-weight="700">Jakson Lima</text>
+    <text x="72" y="244" font-size="26" fill="#9aa5ce" font-weight="400">Distributed Systems · High Performance · Cloud Native</text>
+
+    <g font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="20" fill="#565f89">
+      <text x="72" y="288">GCP · GKE · Terraform · Java · Spring · Clean Architecture · DDD</text>
+    </g>
+  </g>
+
+  <g transform="translate(1040,150)" opacity="0.9">
+    <circle cx="0" cy="0" r="6" fill="#9ece6a"/>
+    <circle cx="34" cy="0" r="6" fill="#e0af68"/>
+    <circle cx="68" cy="0" r="6" fill="#f7768e"/>
+  </g>
+</svg>
