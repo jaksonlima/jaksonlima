@@ -2,7 +2,7 @@ name: Profile · Skyline 3D + Streak
 
 on:
   schedule:
-    - cron: "0 6 * * 0"   # semanal (domingo), 06:00 UTC (03:00 BRT)
+    - cron: "0 6 1 * *"   # mensal (dia 1), 06:00 UTC (03:00 BRT)
   workflow_dispatch:
   push:
     branches:
