@@ -2,7 +2,7 @@ name: GitHub Profile Assets
 
 on:
   schedule:
-    - cron: "0 6 * * *"   # 03:00 BRT (06:00 UTC) — todo dia
+    - cron: "0 6 * * 0"   # semanal (domingo), 06:00 UTC (03:00 BRT)
   workflow_dispatch:
   push:
     branches:
@@ -23,7 +23,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
-      - name: Snapshot stats cards as static SVG
+      - name: Snapshot streak card as static SVG
         run: |
           mkdir -p assets
 
@@ -41,8 +41,7 @@ jobs:
             fi
           }
 
-          download "https://github-readme-stats.vercel.app/api?username=jaksonlima&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1A1B26&include_all_commits=true&count_private=true" assets/stats.svg
-          download "https://github-readme-stats.vercel.app/api/top-langs/?username=jaksonlima&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=1A1B26" assets/top-langs.svg
+          # stats.svg e top-langs.svg são gerados pelo workflow readme-stats.yml (fork próprio)
           download "https://github-readme-streak-stats.herokuapp.com/?user=jaksonlima&theme=tokyonight&hide_border=true&background=1A1B26" assets/streak.svg
 
       - name: Commit & push generated assets

@@ -1,0 +1,79 @@
+name: Update README stats cards
+
+on:
+  schedule:
+    - cron: "0 6 * * 0"   # semanal (domingo), 06:00 UTC (03:00 BRT)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile repo
+        uses: actions/checkout@v4
+
+      - name: Sync fork with upstream
+        env:
+          GH_TOKEN: ${{ secrets.GRS_PAT }}
+        run: |
+          gh repo sync jaksonlima/github-readme-stats \
+            --source anuraghazra/github-readme-stats --force
+
+      - name: Checkout fork (github-readme-stats)
+        uses: actions/checkout@v4
+        with:
+          repository: jaksonlima/github-readme-stats
+          path: grs
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build cards from local server
+        working-directory: grs
+        env:
+          PAT_1: ${{ secrets.GRS_PAT }}
+        run: |
+          npm install --ignore-scripts --no-audit --no-fund
+
+          node express.js &
+          SERVER_PID=$!
+
+          # aguarda o servidor responder
+          for i in $(seq 1 30); do
+            curl -sf "http://localhost:9000/api?username=jaksonlima" -o /dev/null && break
+            sleep 1
+          done
+
+          OUT="$GITHUB_WORKSPACE/assets"
+          mkdir -p "$OUT"
+
+          gen() {
+            local query="$1" out="$2" tmp
+            tmp="$(mktemp)"
+            if curl -sf --max-time 30 "http://localhost:9000${query}" -o "$tmp" \
+               && head -c 200 "$tmp" | grep -q "<svg" \
+               && ! grep -qi "something went wrong\|Maximum retries exceeded\|Could not fetch" "$tmp"; then
+              mv "$tmp" "$out"
+              echo "OK   -> $out ($(wc -c <"$out")b)"
+            else
+              echo "SKIP -> $out (resposta inválida, mantendo versão anterior)"
+              rm -f "$tmp"
+            fi
+          }
+
+          gen "/api?username=jaksonlima&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1A1B26&include_all_commits=true&count_private=true" "$OUT/stats.svg"
+          gen "/api/top-langs?username=jaksonlima&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=1A1B26" "$OUT/top-langs.svg"
+
+          kill "$SERVER_PID" 2>/dev/null || true
+
+      - name: Commit & push cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/stats.svg assets/top-langs.svg
+          git diff --staged --quiet || git commit -m "chore: update readme stats cards"
+          git push
